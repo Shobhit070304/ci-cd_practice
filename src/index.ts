@@ -9,7 +9,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/order", (req, res) => {
-  res.send("This is order Page");
+    res.send("This is order Page");
+})
+
+app.get("/me", (req, res) => {
+    res.send("My name is Shobhit");
 })
 
 app.listen(PORT, () => {
